@@ -591,11 +591,15 @@ img {
   }
 
   .button:hover {
-    box-shadow: 0 10px 36px #fff;
+    box-shadow: 0 10px 36px var(--first-color);
+  }
+
+  .button1:hover {
+    box-shadow: 0 10px 36px var(--first-color);
   }
 
   .work__img {
-    box-shadow: 0 4px 25px #fff;
+    box-shadow: 0 4px 25px var(--first-color);
   }
 
   .contact__input {
