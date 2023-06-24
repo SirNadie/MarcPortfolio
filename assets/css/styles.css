@@ -223,11 +223,22 @@ img {
   width: 260px;
 }
 
-.button {
-  display: inline-block;
+.button1 {
+  display: block inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: .75rem 2.5rem;
+  padding: 8px 5%;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.button {
+  display: block;
+  background-color: var(--first-color);
+  color: #fff;
+  width: 100%;
+  padding: 3%;
   font-weight: var(--font-semi);
   border-radius: .5rem;
   transition: .3s;
@@ -601,5 +612,9 @@ img {
 
   body {
     background-color: var(--second-color);
+  }
+
+  .skills__text b {
+    color: var(--first-color);
   }
 }
