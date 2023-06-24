@@ -3,12 +3,22 @@
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  --first-color: #4070f4;
-  --second-color: #0e2431;
+  --first-color: #ffa43a;
+  --second-color: #111111;
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
 @media screen and(min-width:768px) {
@@ -18,22 +28,6 @@
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
   }
-}
-
-:root {
-  --mb-1: 0.5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-}
-
-:root {
-  --z-back: -10;
-  --z-normal: 1;
-  --z-tooltip: 10;
-  --z-fixed: 100;
 }
 
 *,
@@ -322,8 +316,6 @@ img {
   border-radius: .5rem;
 }
 
-
-
 .work__container {
   row-gap: 2rem;
 }
@@ -528,5 +520,86 @@ img {
 
   .home__img {
     width: 450px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+  }
+
+  .section-title {
+    color: var(--first-color);
+  }
+
+  .section-title::after {
+    background-color: var(--first-color);
+  }
+
+  .l-header {
+    background-color: var(--second-color);
+    box-shadow: 0 1px 4px #fff;
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav__menu {
+      background-color: var(--second-color);
+    }
+  }
+
+  .nav__link {
+    color: #fff;
+  }
+
+  .nav__link:hover::after {
+    background-color: var(--first-color);
+  }
+
+  .nav__logo {
+    color: #fff;
+  }
+
+  .nav__toggle {
+    color: #fff;
+  }
+
+  .active::after {
+    background-color: var(--first-color);
+  }
+
+  .home__title-color {
+    color: var(--first-color);
+  }
+
+  .home__social-icon {
+    color: #fff;
+  }
+
+  .home__social-icon:hover {
+    color: var(--first-color);
+  }
+
+  .button:hover {
+    box-shadow: 0 10px 36px #fff;
+  }
+
+  .work__img {
+    box-shadow: 0 4px 25px #fff;
+  }
+
+  .contact__input {
+    color: var(--first-color);
+    border: 1.5px solid var(--first-color);
+    background-color: var(--second-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    .nav__link {
+      color: #fff;
+    }
+  }
+
+  body {
+    background-color: var(--second-color);
   }
 }
